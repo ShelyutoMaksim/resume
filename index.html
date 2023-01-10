@@ -10,7 +10,7 @@
 <body>
 <main class="main main__wrapper">
     <div class="main__col-placeholder">
-        <button class="main__menu-action">
+        <button class="main__menu-action" id="sidebar_action">
             <hr class="line1">
             <hr class="line2">
             <hr class="line3">
@@ -41,16 +41,6 @@
         </article>
     </div>
 </main>
-<script>
-    function reportWindowSize() {
-        document.documentElement.style.setProperty('--bodyWidth', `${window.innerWidth}px`);
-    }
-
-    window.addEventListener("load", (event) => {
-        console.log("page is fully loaded");
-        reportWindowSize();
-        window.addEventListener("resize", reportWindowSize);
-    });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -34,20 +34,20 @@
 }
 
 
-.main__menu-action:active .line1,
-.main__menu-action:focus .line1 {
+.main__menu-action_open .line1,
+.main__menu-action_open .line1 {
     position: absolute;
     transform: rotate(45deg);
     margin: 0;
 }
 
-.main__menu-action:active .line2,
-.main__menu-action:focus .line2 {
+.main__menu-action_open .line2,
+.main__menu-action_open .line2 {
     opacity: 0;
 }
 
-.main__menu-action:active .line3,
-.main__menu-action:focus .line3 {
+.main__menu-action_open .line3,
+.main__menu-action_open .line3 {
     position: absolute;
     transform: rotate(-45deg);
     margin: 0;
