@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main class="main main__wrapper">
+    <div class="main__col-placeholder">
+        <button class="main__menu-action">
+            <hr class="line1">
+            <hr class="line2">
+            <hr class="line3">
+        </button>
+    </div>
+    <div class="main__col-content">
+        <header class="main__header">
+            <div class="main__header__photos">
+                <button class="main__header__photos__action-prev"></button>
+                <button class="main__header__photos__action-next"></button>
+                <img class="main__header__photos__photo" src="pictures/IMG_5870.jpg" alt="test">
+
+            </div>
+            <div class="main__header__logos">
+                <h2 class="main__header__logos__first-name">Максим</h2>
+                <h1 class="main__header__logos__last-name">Шелюто</h1>
+                <hr class="main__header__logos__divider">
+                <p class="main__header__logos__position">Стажёр</p>
+            </div>
+        </header>
+
+        <article class="main__resume resume-content">
+
+            <section class="resume-content__section"></section>
+            <section class="resume-content__section"></section>
+            <section class="resume-content__section"></section>
+            <section class="resume-content__section"></section>
+        </article>
+    </div>
+</main>
+<script>
+    function reportWindowSize() {
+        document.documentElement.style.setProperty('--bodyWidth', `${window.innerWidth}px`);
+    }
+
+    window.addEventListener("load", (event) => {
+        console.log("page is fully loaded");
+        reportWindowSize();
+        window.addEventListener("resize", reportWindowSize);
+    });
+</script>
+</body>
+</html>
