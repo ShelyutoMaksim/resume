@@ -4,7 +4,7 @@ let sidebar;
 let prevPhotoBtn;
 let nextPhotoBtn;
 let photoWrapper;
-let photoIndex = 0;
+let photoIndex = 3;
 let photoLinks = [
     "assets/pictures/IMG_5870.jpg",
     "assets/pictures/0L8A2457.jpg",
@@ -66,6 +66,7 @@ window.addEventListener("load", (event) => {
     prevPhotoBtn.addEventListener("click", (e) => slidePhoto(false));
     nextPhotoBtn = document.getElementById('gallery-next');
     nextPhotoBtn.addEventListener("click", (e) => slidePhoto(true));
+    slidePhoto(true);
     windowResizeAction();
     sideBarAction();
     window.addEventListener("resize", windowResizeAction);
