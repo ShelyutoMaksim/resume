@@ -13,15 +13,36 @@
 <body>
 <main class="main main__wrapper">
     <div id="spinner" class="main__loader main__loader__hided">
-        <div class="loader__item loader__item1"><span class="loader__item1__t1">loading</span>...<span class="loader__item1__t2">/loading</span></div>
+        <div class="loader__item loader__item1"><span class="loader__item1__t1">loading</span>...<span
+                class="loader__item1__t2">/loading</span></div>
     </div>
-    <div class="main__col-placeholder" id="sidebar">
+    <nav class="main__col-placeholder" id="sidebar">
         <button class="main__menu-action" id="sidebar_action">
             <hr class="line1">
             <hr class="line2">
             <hr class="line3">
         </button>
-    </div>
+        <div class="main__col-placeholder__nav">
+            <div class="dynamic-link tittles--with--icons" data-link="#about-me">
+                <object class="dynamic-link" data-link="#about-me" data="assets/icons/dark/about.svg" width="30" height="30"></object>
+                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#about-me">О себе</span>
+            </div>
+            <div class="dynamic-link tittles--with--icons" data-link="#experience">
+                <object class="dynamic-link" data-link="#experience" data="assets/icons/dark/experience.svg" width="30" height="30"></object>
+                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#experience">Опыт работы</span>
+            </div>
+            <div class="dynamic-link tittles--with--icons" data-link="#education">
+                <object class="dynamic-link" data-link="#education" data="assets/icons/dark/education.svg" width="30" height="30"></object>
+                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#education">Образование</span>
+            </div>
+            <div class="dynamic-link tittles--with--icons" data-link="#skills">
+                <object class="dynamic-link" data-link="#skills" data="assets/icons/dark/skills.svg" width="30" height="30"></object>
+                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#skills">Навыки</span>
+            </div>
+
+
+        </div>
+    </nav>
     <div class="main__col-content">
         <header class="main__header">
             <div class="main__header__logos">
@@ -36,7 +57,7 @@
                 <div class="main__header__photos__wrapper">
                     <button class="main__header__photos__action-prev"></button>
                     <button class="main__header__photos__action-next"></button>
-                    <img class="main__header__photos__photo" src="pictures/IMG_5870.jpg" alt="test">
+                    <img class="main__header__photos__photo" src="assets/pictures/IMG_5870.jpg" alt="test">
                 </div>
             </div>
         </header>
@@ -44,14 +65,28 @@
         <article class="main__resume resume-content">
 
             <section class="resume-content__section">
-                <h2 class="resume-content__section--tittle" id="about-me">О себе</h2>
+                <div class="tittles--with--icons">
+                    <object data="assets/icons/light/about.svg" width="30" height="30"></object>
+                    <h2 class="resume-content__section--tittle" id="about-me">О себе</h2>
+                </div>
+
+
                 <hr class="resume-content__section--divider main-divider">
                 <p class="resume-content__section--text">
-                    После окончания университета я поступил на работу, связанную с системным администрированием, обеспечением безопасности информации и учетом материальных технических средств. В последствии принимал участие в поддержке и развитии внутренних веб-ресурсов университета, где занялся изучением веб-разработки, а так же окончил онлайн курс на сайте Udemy по теме "Полный курс JavaScript", где изучил основы ООП, DOM, использованию npm и git, кросбраузерность и написание логики на native JS и jQuery. В марте 2022 года ушёл с основного места работы и начал углубленное изучение направленияя Front-end (angular developer), для последующего трудоустройства.
+                    После окончания университета я поступил на работу, связанную с системным администрированием,
+                    обеспечением безопасности информации и учетом материальных технических средств. В последствии
+                    принимал участие в поддержке и развитии внутренних веб-ресурсов университета, где занялся изучением
+                    веб-разработки, а так же окончил онлайн курс на сайте Udemy по теме "Полный курс JavaScript", где
+                    изучил основы ООП, DOM, использованию npm и git, кросбраузерность и написание логики на native JS и
+                    jQuery. В марте 2022 года ушёл с основного места работы и начал углубленное изучение направленияя
+                    Front-end (angular developer), для последующего трудоустройства.
                 </p>
             </section>
             <section class="resume-content__section">
-                <h2 class="resume-content__section--tittle" id="experience">Опыт работы</h2>
+                <div class="tittles--with--icons">
+                    <object data="assets/icons/light/experience.svg" width="30" height="30"></object>
+                    <h2 class="resume-content__section--tittle" id="experience">Опыт работы</h2>
+                </div>
                 <hr class="resume-content__section--divider main-divider">
                 <div class="resume-content__section__wrapper">
                     <div class="resume-content__section__col-left">
@@ -64,7 +99,8 @@
                     </div>
                     <div class="resume-content__section__col-right">
                         <h3 class="resume-content__section--sub-tittle">Инженер</h3>
-                        <p class="resume-content__section--text">Обеспечение сохранности и работоспособности аппаратуры находящейся на базе института китаеведения им. Конфуция БГУ</p>
+                        <p class="resume-content__section--text">Обеспечение сохранности и работоспособности аппаратуры
+                            находящейся на базе института китаеведения им. Конфуция БГУ</p>
                     </div>
                 </div>
                 <div class="resume-content__section__wrapper">
@@ -73,17 +109,21 @@
                             Август 2019 — Апрель 2021
                         </p>
                         <p class="resume-content__section--secondary-text">
-                           Объеденённый институт машиностроения Национальной академия наук Республики Беларусь
+                            Объеденённый институт машиностроения Национальной академия наук Республики Беларусь
                         </p>
                     </div>
                     <div class="resume-content__section__col-right">
                         <h3 class="resume-content__section--sub-tittle">Инженер</h3>
-                        <p class="resume-content__section--text">Работа с документацией, помощь в проведении исследований</p>
+                        <p class="resume-content__section--text">Работа с документацией, помощь в проведении
+                            исследований</p>
                     </div>
                 </div>
             </section>
             <section class="resume-content__section">
-                <h2 class="resume-content__section--tittle" id="education">Образование</h2>
+                <div class="tittles--with--icons">
+                    <object data="assets/icons/light/education.svg" width="30" height="30"></object>
+                    <h2 class="resume-content__section--tittle" id="education">Образование</h2>
+                </div>
                 <hr class="resume-content__section--divider main-divider">
                 <div class="resume-content__section__wrapper">
                     <div class="resume-content__section__col-left">
@@ -96,12 +136,16 @@
                     </div>
                     <div class="resume-content__section__col-right">
                         <h3 class="resume-content__section--sub-tittle">Белорусский государственный университет</h3>
-                        <p class="resume-content__section--text">Механико-математический факультет. Кафедра теоретической и прикладной механики</p>
+                        <p class="resume-content__section--text">Механико-математический факультет. Кафедра
+                            теоретической и прикладной механики</p>
                     </div>
                 </div>
             </section>
             <section class="resume-content__section">
-                <h2 class="resume-content__section--tittle" id="skills">Навыки</h2>
+                <div class="tittles--with--icons">
+                    <object data="assets/icons/light/skills.svg" width="30" height="30"></object>
+                    <h2 class="resume-content__section--tittle" id="skills">Навыки</h2>
+                </div>
                 <hr class="resume-content__section--divider main-divider">
                 <div class="resume-content__section__skills__wrapper">
                     <span class="chip">CSS3</span>

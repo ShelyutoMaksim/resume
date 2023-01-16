@@ -117,3 +117,21 @@
     color: gray;
     letter-spacing: 0.3em;
 }
+
+.main__col-placeholder__nav-item{
+    text-decoration: none;
+    color: #292a35;
+    line-height: 30px;
+    padding: 0.5rem;
+}
+
+.main__col-placeholder__nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.main__col-placeholder__nav-item--hidden{
+    display: none;
+}
