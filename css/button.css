@@ -1,11 +1,11 @@
 .main__menu-action {
     position: relative;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width: 50px;
     height: 30px;
-    margin: 20px auto;
     color: black;
     padding: 0.2rem;
     background-color: transparent;
@@ -80,6 +80,10 @@
 }
 
 .main__header__photos__action-next{
-    right: 0;
+    right: 1rem;
+}
+
+.main__header__photos__action-prev{
+    left: 1rem;
 }
 

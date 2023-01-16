@@ -1,0 +1,56 @@
+.main__resume {
+    background-color: #292a35;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+
+.resume-content__section {
+    margin-bottom: 4rem;
+}
+
+.resume-content__section--tittle,
+.resume-content__section--sub-tittle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.resume-content__section--sub-tittle {
+    font-size: 24px;
+}
+
+.resume-content__section--text,
+.resume-content__section--secondary-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.resume-content__section--secondary-text {
+    font-size: 16px;
+}
+
+.resume-content__section--divider {
+    margin: 1rem 0;
+}
+
+.resume-content__section__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.resume-content__section__col-left,
+.resume-content__section__col-right {
+    display: flex;
+    flex: 1 1 30%;
+    flex-direction: column;
+}
+
+.resume-content__section__col-right {
+    flex: 2 2 70%;
+}

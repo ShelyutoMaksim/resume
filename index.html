@@ -5,11 +5,17 @@
     <title>My resume</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/spinner.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <main class="main main__wrapper">
-    <div class="main__col-placeholder">
+    <div id="spinner" class="main__loader main__loader__hided">
+        <div class="loader__item loader__item1"><span class="loader__item1__t1">loading</span>...<span class="loader__item1__t2">/loading</span></div>
+    </div>
+    <div class="main__col-placeholder" id="sidebar">
         <button class="main__menu-action" id="sidebar_action">
             <hr class="line1">
             <hr class="line2">
@@ -18,26 +24,101 @@
     </div>
     <div class="main__col-content">
         <header class="main__header">
-            <div class="main__header__photos">
-                <button class="main__header__photos__action-prev"></button>
-                <button class="main__header__photos__action-next"></button>
-                <img class="main__header__photos__photo" src="pictures/IMG_5870.jpg" alt="test">
-
-            </div>
             <div class="main__header__logos">
-                <h2 class="main__header__logos__first-name">Максим</h2>
-                <h1 class="main__header__logos__last-name">Шелюто</h1>
-                <hr class="main__header__logos__divider">
+                <h1 class="main__header__logos__name">
+                    <span class="main__header__logos__first-name">Максим</span>
+                    <span class="main__header__logos__last-name">Шелюто</span>
+                </h1>
+                <hr class="main__header__logos__divider main-divider">
                 <p class="main__header__logos__position">Стажёр</p>
+            </div>
+            <div class="main__header__photos">
+                <div class="main__header__photos__wrapper">
+                    <button class="main__header__photos__action-prev"></button>
+                    <button class="main__header__photos__action-next"></button>
+                    <img class="main__header__photos__photo" src="pictures/IMG_5870.jpg" alt="test">
+                </div>
             </div>
         </header>
 
         <article class="main__resume resume-content">
 
-            <section class="resume-content__section"></section>
-            <section class="resume-content__section"></section>
-            <section class="resume-content__section"></section>
-            <section class="resume-content__section"></section>
+            <section class="resume-content__section">
+                <h2 class="resume-content__section--tittle" id="about-me">О себе</h2>
+                <hr class="resume-content__section--divider main-divider">
+                <p class="resume-content__section--text">
+                    После окончания университета я поступил на работу, связанную с системным администрированием, обеспечением безопасности информации и учетом материальных технических средств. В последствии принимал участие в поддержке и развитии внутренних веб-ресурсов университета, где занялся изучением веб-разработки, а так же окончил онлайн курс на сайте Udemy по теме "Полный курс JavaScript", где изучил основы ООП, DOM, использованию npm и git, кросбраузерность и написание логики на native JS и jQuery. В марте 2022 года ушёл с основного места работы и начал углубленное изучение направленияя Front-end (angular developer), для последующего трудоустройства.
+                </p>
+            </section>
+            <section class="resume-content__section">
+                <h2 class="resume-content__section--tittle" id="experience">Опыт работы</h2>
+                <hr class="resume-content__section--divider main-divider">
+                <div class="resume-content__section__wrapper">
+                    <div class="resume-content__section__col-left">
+                        <p class="resume-content__section--secondary-text mb-1">
+                            Апрель 2021 — Март 2022
+                        </p>
+                        <p class="resume-content__section--secondary-text">
+                            Институт китаеведения им. Конфуция Белорусского государственного университета
+                        </p>
+                    </div>
+                    <div class="resume-content__section__col-right">
+                        <h3 class="resume-content__section--sub-tittle">Инженер</h3>
+                        <p class="resume-content__section--text">Обеспечение сохранности и работоспособности аппаратуры находящейся на базе института китаеведения им. Конфуция БГУ</p>
+                    </div>
+                </div>
+                <div class="resume-content__section__wrapper">
+                    <div class="resume-content__section__col-left">
+                        <p class="resume-content__section--secondary-text mb-1">
+                            Август 2019 — Апрель 2021
+                        </p>
+                        <p class="resume-content__section--secondary-text">
+                           Объеденённый институт машиностроения Национальной академия наук Республики Беларусь
+                        </p>
+                    </div>
+                    <div class="resume-content__section__col-right">
+                        <h3 class="resume-content__section--sub-tittle">Инженер</h3>
+                        <p class="resume-content__section--text">Работа с документацией, помощь в проведении исследований</p>
+                    </div>
+                </div>
+            </section>
+            <section class="resume-content__section">
+                <h2 class="resume-content__section--tittle" id="education">Образование</h2>
+                <hr class="resume-content__section--divider main-divider">
+                <div class="resume-content__section__wrapper">
+                    <div class="resume-content__section__col-left">
+                        <p class="resume-content__section--secondary-text mb-1">
+                            2015 год — 2019 год
+                        </p>
+                        <p class="resume-content__section--secondary-text">
+                            Высшее
+                        </p>
+                    </div>
+                    <div class="resume-content__section__col-right">
+                        <h3 class="resume-content__section--sub-tittle">Белорусский государственный университет</h3>
+                        <p class="resume-content__section--text">Механико-математический факультет. Кафедра теоретической и прикладной механики</p>
+                    </div>
+                </div>
+            </section>
+            <section class="resume-content__section">
+                <h2 class="resume-content__section--tittle" id="skills">Навыки</h2>
+                <hr class="resume-content__section--divider main-divider">
+                <div class="resume-content__section__skills__wrapper">
+                    <span class="chip">CSS3</span>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">Angular</span>
+                    <span class="chip">PrimeNG</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">ООП</span>
+                    <span class="chip">jQuery</span>
+                    <span class="chip">Bootstrap</span>
+                    <span class="chip">Sass</span>
+                    <span class="chip">Less</span>
+                    <span class="chip">БЭМ</span>
+                </div>
+            </section>
         </article>
     </div>
 </main>

@@ -1,0 +1,119 @@
+.main__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1;
+    height: fit-content;
+}
+
+.main__header__logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    flex: none;
+    align-items: center;
+    text-align: center;
+}
+
+
+.main__header__photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__header__photos__photo {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main__header__photos__wrapper {
+    height: fit-content;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 1rem;
+}
+
+@media screen and (min-width: 420px) {
+    .main__header__photos {
+        position: relative;
+        height: inherit;
+    }
+
+    .main__header__photos__wrapper {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main__header {
+        flex-direction: row-reverse;
+        height: inherit;
+    }
+
+    .main__header__logos {
+        align-items: flex-start;
+        text-align: center;
+        flex: 1;
+        padding: 1rem 0 1rem 2.5rem;
+    }
+
+    .main__header__photos {
+        flex: 1;
+        position: relative;
+        height: inherit;
+    }
+
+    .main__header__photos__photo {
+        height: calc(100% - 4rem);
+        width: auto;
+    }
+}
+
+.main__header__logos__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header__logos__first-name {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: black;
+}
+
+.main__header__logos__last-name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: black;
+}
+
+.main-divider,
+.main__header__logos__divider {
+    background-color: #f8de76;
+    height: 3px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.main__header__logos__position {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: gray;
+    letter-spacing: 0.3em;
+}
