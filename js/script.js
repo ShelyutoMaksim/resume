@@ -59,7 +59,6 @@ function slidePhoto(prev) {
 }
 
 window.addEventListener("load", (event) => {
-    console.log("page is fully loaded");
     btn = document.getElementById('sidebar_action');
     sidebar = document.getElementById('sidebar');
     photoWrapper = document.getElementById('photo-wrapper');
@@ -80,7 +79,7 @@ window.addEventListener("load", (event) => {
         spinnerItem.style.setProperty('border-color', i % 2 === 0 ? '#f7b54b white #f7b54b white' : 'white #f7b54b white #f7b54b');
         spinner.appendChild(spinnerItem);
     }
-    // spinner.classList.remove('main__loader__hided');
+    spinner.classList.remove('main__loader__hided');
     setTimeout(() => document.getElementById('spinner').remove(), 5500);
     const navItems = document.getElementsByClassName('dynamic-link');
     for (let navItem of navItems) {
