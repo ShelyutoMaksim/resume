@@ -6,9 +6,9 @@ let nextPhotoBtn;
 let photoWrapper;
 let photoIndex = 3;
 let photoLinks = [
-    "assets/pictures/IMG_5870.jpg",
-    "assets/pictures/0L8A2457.jpg",
-    "assets/pictures/0L8A2430.jpg"
+    "assets/pictures/1.jpg",
+    "assets/pictures/2.jpg",
+    "assets/pictures/3.jpg"
 ];
 
 function windowResizeAction() {
