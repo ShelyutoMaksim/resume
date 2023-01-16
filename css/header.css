@@ -130,8 +130,23 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    height: calc(100% - 100px);
+    align-items: center;
 }
 
 .main__col-placeholder__nav-item--hidden{
     display: none;
+}
+
+.main__col-placeholder__nav__social-link{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.social-link{
+    text-decoration: none;
+    color: transparent;
+    display: block;
+    margin: 0.5rem;
 }

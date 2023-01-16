@@ -23,24 +23,35 @@
             <hr class="line3">
         </button>
         <div class="main__col-placeholder__nav">
-            <div class="dynamic-link tittles--with--icons" data-link="#about-me">
-                <object class="dynamic-link" data-link="#about-me" data="assets/icons/dark/about.svg" width="30" height="30"></object>
-                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#about-me">О себе</span>
+            <div class="main__col-placeholder__nav__main-link">
+                <div class="dynamic-link tittles--with--icons" data-link="#about-me">
+                    <object class="dynamic-link" data-link="#about-me" data="assets/icons/dark/about.png" width="30" height="30"></object>
+                    <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#about-me">О себе</span>
+                </div>
+                <div class="dynamic-link tittles--with--icons" data-link="#experience">
+                    <object class="dynamic-link" data-link="#experience" data="assets/icons/dark/experience.png" width="30" height="30"></object>
+                    <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#experience">Опыт работы</span>
+                </div>
+                <div class="dynamic-link tittles--with--icons" data-link="#education">
+                    <object class="dynamic-link" data-link="#education" data="assets/icons/dark/education.png" width="30" height="30"></object>
+                    <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#education">Образование</span>
+                </div>
+                <div class="dynamic-link tittles--with--icons" data-link="#skills">
+                    <object class="dynamic-link" data-link="#skills" data="assets/icons/dark/skills.png" width="30" height="30"></object>
+                    <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#skills">Навыки</span>
+                </div>
             </div>
-            <div class="dynamic-link tittles--with--icons" data-link="#experience">
-                <object class="dynamic-link" data-link="#experience" data="assets/icons/dark/experience.svg" width="30" height="30"></object>
-                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#experience">Опыт работы</span>
+            <div class="main__col-placeholder__nav__social-link">
+                <a class="social-link" href="https://github.com/ShelyutoMaksim">
+                    <img src="assets/icons/dark/git.png" alt="github" width="30" height="30">
+                </a>
+                <a class="social-link" onclick="copyPhoneNumber()">
+                    <img src="assets/icons/dark/phone.png" alt="phone" width="30" height="30">
+                </a>
+                <a class="social-link" href="mailto:shelyutomax@gmail.com">
+                    <img src="assets/icons/dark/mail.png" alt="mail" width="30" height="30">
+                </a>
             </div>
-            <div class="dynamic-link tittles--with--icons" data-link="#education">
-                <object class="dynamic-link" data-link="#education" data="assets/icons/dark/education.svg" width="30" height="30"></object>
-                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#education">Образование</span>
-            </div>
-            <div class="dynamic-link tittles--with--icons" data-link="#skills">
-                <object class="dynamic-link" data-link="#skills" data="assets/icons/dark/skills.svg" width="30" height="30"></object>
-                <span class="dynamic-link main__col-placeholder__nav-item main__col-placeholder__nav-item--hidden" data-link="#skills">Навыки</span>
-            </div>
-
-
         </div>
     </nav>
     <div class="main__col-content">
@@ -55,9 +66,9 @@
             </div>
             <div class="main__header__photos">
                 <div class="main__header__photos__wrapper">
-                    <button class="main__header__photos__action-prev"></button>
-                    <button class="main__header__photos__action-next"></button>
-                    <img class="main__header__photos__photo" src="assets/pictures/IMG_5870.jpg" alt="test">
+                    <button class="main__header__photos__action-prev" id="gallery-prev"></button>
+                    <button class="main__header__photos__action-next" id="gallery-next"></button>
+                    <img class="main__header__photos__photo" src="assets/pictures/IMG_5870.jpg" alt="test" id="photo-wrapper">
                 </div>
             </div>
         </header>
